@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaj Coding Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+            color: #fff;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            background: #2a5298;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            color: #fff;
+            background: #4caf50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #45a049;
+        }
+        section {
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1e3c72;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #1e3c72;
+            color: #fff;
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: monospace;
+        }
+        button {
+            padding: 10px 20px;
+            background: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sahaj Coding Classes</h1>
+        <p>Your one-stop destination for learning coding creatively!</p>
+    </header>
+
+    <nav>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#python">Python</a>
+        <a href="#java">Java</a>
+        <a href="#c">C</a>
+    </nav>
+
+    <section id="html">
+        <h2>HTML: The Language of the Web</h2>
+        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It defines the structure of a webpage and allows you to organize content with headings, paragraphs, images, and more.</p>
+        <h3>Example:</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </section>
+
+    <section id="css">
+        <h2>CSS: Styling the Web</h2>
+        <p>CSS (Cascading Style Sheets) allows you to style your HTML elements. It helps control colors, layouts, fonts, and more.</p>
+        <h3>Example:</h3>
+        <pre>
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: navy;
+    text-align: center;
+}
+        </pre>
+    </section>
+
+    <section id="python">
+        <h2>Python: The Language of Simplicity</h2>
+        <p>Python is a versatile programming language used in web development, data science, artificial intelligence, and more. It is known for its simplicity and readability.</p>
+        <h3>Editor:</h3>
+        <textarea id="pythonCode" placeholder="Write your Python code here..."></textarea>
+        <button onclick="runPython()">Run Python Code</button>
+        <pre id="pythonOutput">Output will appear here...</pre>
+    </section>
+
+    <section id="java">
+        <h2>Java: Object-Oriented Programming</h2>
+        <p>Java is a powerful, object-oriented programming language widely used for building enterprise-level applications.</p>
+        <h3>Editor:</h3>
+        <textarea id="javaCode" placeholder="Write your Java code here..."></textarea>
+        <button onclick="runJava()">Run Java Code</button>
+        <pre id="javaOutput">Output will appear here...</pre>
+    </section>
+
+    <section id="c">
+        <h2>C: The Foundation of Programming</h2>
+        <p>C is a general-purpose programming language that serves as the backbone of many modern languages like Python, Java, and C++.</p>
+        <h3>Editor:</h3>
+        <textarea id="cCode" placeholder="Write your C code here..."></textarea>
+        <button onclick="runC()">Run C Code</button>
+        <pre id="cOutput">Output will appear here...</pre>
+    </section>
+
+    <footer>
+        <p>Contact us: 8668472679 | Email: <a href="mailto:info@sahajcoding.com">info@sahajcoding.com</a></p>
+    </footer>
+
+    <script>
+        function runPython() {
+            const code = document.getElementById('pythonCode').value;
+            document.getElementById('pythonOutput').textContent = `Python can't run directly in the browser. Please use an interpreter!`;
+        }
+
+        function runJava() {
+            const code = document.getElementById('javaCode').value;
+            document.getElementById('javaOutput').textContent = `Java can't run directly in the browser. Please compile it on your system.`;
+        }
+
+        function runC() {
+            const code = document.getElementById('cCode').value;
+            document.getElementById('cOutput').textContent = `C can't run directly in the browser. Use a C compiler.`;
+        }
+    </script>
+</body>
+</html>
